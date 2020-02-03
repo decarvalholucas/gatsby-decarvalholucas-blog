@@ -1,3 +1,11 @@
-import React from "react"
+import React from "react";
 
-export default () => <div>Hello world!</div>
+import GlobalStyles from "../assets/styles/global";
+import Header from "../components/header";
+
+export default () => (
+  <>
+    <GlobalStyles />
+    <Header />
+  </>
+);

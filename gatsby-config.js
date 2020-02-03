@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const siteMetadata = require("./configs/metadata");
+const plugins = require("./configs/plugins");
+
 module.exports = {
-  /* Your site config here */
-}
+  siteMetadata,
+  plugins,
+};
