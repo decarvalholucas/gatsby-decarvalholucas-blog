@@ -3,6 +3,8 @@
 const path = require(`path`);
 
 module.exports = [
+  "gatsby-plugin-react-helmet",
+  "gatsby-plugin-sitemap",
   {
     resolve: `gatsby-plugin-styled-components`,
   },
@@ -35,4 +37,37 @@ module.exports = [
       ],
     },
   },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Lucas de Carvalho`,
+      short_name: `Lucas de Carvalho`,
+      start_url: `/`,
+      background_color: `#fff`,
+      theme_color: `#7159c1`,
+      display: `standalone`,
+      icon: path.join(
+        __dirname,
+        `..`,
+        `src`,
+        `assets`,
+        `images`,
+        "icon-lc.png"
+      ),
+    },
+  },
+  {
+    resolve: `gatsby-plugin-canonical-urls`,
+    options: {
+      siteUrl: `https://www.lucasdecarvalho.com`,
+    },
+  },
+  {
+    resolve: `gatsby-plugin-page-creator`,
+    options: {
+      path: path.join(__dirname, `..`, `src`, `pages`),
+      ignore: [`**/styles.js`],
+    },
+  },
+  "gatsby-plugin-offline",
 ];
