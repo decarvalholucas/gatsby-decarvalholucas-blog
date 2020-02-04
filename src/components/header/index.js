@@ -34,7 +34,7 @@ const Header = () => {
       <Container>
         <div className="header__left">
           <Img fixed={file.childImageSharp.fixed} />
-          <h1>{title}</h1>
+          <h1>{title.toLowerCase()}</h1>
         </div>
       </Container>
     </DefaultHeader>

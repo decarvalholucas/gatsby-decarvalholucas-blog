@@ -23,7 +23,11 @@ export const Container = styled.div`
       margin-right: 10px;
     }
     h1 {
-      color: #FFF;
+      color: #fff;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: 0.025rem;
     }
   }
 `;

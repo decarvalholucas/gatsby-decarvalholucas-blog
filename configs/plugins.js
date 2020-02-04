@@ -23,5 +23,16 @@ module.exports = [
       trickle: false,
       minimum: 0.4,
     },
-  }
+  },
+  {
+    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    options: {
+      fonts: [
+        {
+          family: `Open Sans`,
+          variants: [`400`, `700`],
+        },
+      ],
+    },
+  },
 ];
